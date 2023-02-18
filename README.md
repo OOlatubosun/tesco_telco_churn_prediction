@@ -12,26 +12,25 @@ This will be using `AutoGluon` framework.
 
 Create an environment
 ```
-conda create --name insuranceenv python=3.9 -y
+conda create --name tescoenv python=3.9 -y
 ```
 
 Activate the environment
 ```
-conda activate insuranceenv
+conda activate tescoenv
 
 Install packages in the environment
 NB: This is for Windows
 
 ```
 pip install torch==1.12.1+cpu torchvision==0.13.1+cpu torchtext==0.13.1 -f https://download.pytorch.org/whl/cpu/torch_stable.html
-pip install autogluon chardet
-conda install streamlit jupyter
+pip install autogluon streamlit jupyter
 ```
 
 ### Test your instructions as follows:
 
 ```bash
-(insuranceenv) C:\Users\User\Documents\workspace_datahackermen\insurance_premium_prediction>python
+(tescoenv) C:\Users\User\Documents\datahackerman_rzproject\tesco_telco_prediction>python
 Python 3.9.16 (main, Jan 11 2023, 16:16:36) [MSC v.1916 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from autogluon.tabular import TabularDataset, TabularPredictor
@@ -42,7 +41,7 @@ If that works, then you have good installation for `autogluon`.
 And then for `Streamlit`,
 
 ```bash
-(insuranceenv) C:\Users\User\Documents\workspace_datahackermen\insurance_premium_prediction>streamlit hello
+(tescoenv) C:\Users\User\Documents\datahackerman_rzproject\tesco_telco_prediction>streamlit hello
   Welcome to Streamlit. Check out our demo in your browser.
 
   Local URL: http://localhost:8501
@@ -61,7 +60,7 @@ And then for `Streamlit`,
 
 ```
 
-Insurance Premium
+Tesco Telco
 |--README.md
 |--images
 |--data
